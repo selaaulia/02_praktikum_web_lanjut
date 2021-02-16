@@ -13,6 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
 /**--------Praktikum 1---------- */
 Route::get('/', function () {
     echo "Selamat Datang";
