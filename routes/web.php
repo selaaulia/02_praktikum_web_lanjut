@@ -13,12 +13,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+/**--------Praktikum 1---------- */
 Route::get('/', function () {
-    return view('welcome');
+    echo "Selamat Datang";
 });
 
-/**--------Praktikum 1------ */
+Route::get('/about', function () {
+    echo "1941720196 - Sela Aulia Siswanto";
+    
+});
 
-Route::get('/', function ($id) {
-    echo "Selamat Datang";
+Route::get('/articles/{id}', function ($id) {
+    return 'Halaman Artikel dengan ID ' .$id;
 });
