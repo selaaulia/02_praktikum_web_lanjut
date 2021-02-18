@@ -50,11 +50,11 @@ Route::get('/home', [ProductController::class, 'home']);
 Route::prefix('product')->group(function(){
     Route::get('/{id}', [ProductController::class, 'product']);
 });
-Route::get('/news/{id}', [ProductController::class, 'news']);
+Route::get('/news', [ProductController::class, 'news']);
 Route::prefix('program')->group(function(){
     Route::get('/{id}', [ProductController::class, 'program']);
 });
 Route::get('/about-us', function () {
     echo '<a href="https://www.educastudio.com/about-us">https://www.educastudio.com/about-us</a>';
 });
-Route::get('/contact-us', [ProductController::class, 'us']);
+Route::get('/contact-us', [ProductController::class,'us']);
